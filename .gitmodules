@@ -1,0 +1,6 @@
+[submodule "worstrisc"]
+	path = worstrisc
+	url = git@github.com:klosskopf/worstrisc.git
+[submodule "worstcomponents"]
+	path = worstcomponents
+	url = git@github.com:klosskopf/worstcomponents.git

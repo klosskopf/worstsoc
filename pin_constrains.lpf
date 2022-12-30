@@ -1,0 +1,41 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK JTAGPATHS ;
+IOBUF PORT ALLPORTS IO_TYPE=LVCMOS33 ;
+
+LOCATE COMP "rst_i" SITE "D11" ; #PIN44
+IOBUF PORT "rst_i" PULLMODE=UP;
+
+LOCATE COMP "parallel_o[0]" SITE "B3" ;
+LOCATE COMP "parallel_o[1]" SITE "B4" ;
+LOCATE COMP "parallel_o[2]" SITE "B5" ;
+LOCATE COMP "parallel_o[3]" SITE "B6" ;
+LOCATE COMP "parallel_o[4]" SITE "A6" ;
+LOCATE COMP "parallel_o[5]" SITE "A7" ;
+LOCATE COMP "parallel_o[6]" SITE "A8" ;
+LOCATE COMP "parallel_o[7]" SITE "B10" ;
+LOCATE COMP "parallel_o[8]" SITE "B11" ;
+LOCATE COMP "parallel_o[9]" SITE "B12" ;
+LOCATE COMP "parallel_o[10]" SITE "B13" ;
+LOCATE COMP "parallel_o[31]" SITE "N8" ; #FLASH_CS
+
+LOCATE COMP "parallel_i[0]" SITE "A2" ;
+LOCATE COMP "parallel_i[1]" SITE "A3" ;
+LOCATE COMP "parallel_i[2]" SITE "A4" ;
+LOCATE COMP "parallel_i[3]" SITE "A5" ;
+LOCATE COMP "parallel_i[4]" SITE "B7" ;
+LOCATE COMP "parallel_i[5]" SITE "B8" ;
+LOCATE COMP "parallel_i[6]" SITE "A9" ;
+LOCATE COMP "parallel_i[7]" SITE "A10" ;
+LOCATE COMP "parallel_i[8]" SITE "A11" ;
+LOCATE COMP "parallel_i[9]" SITE "A12" ;
+LOCATE COMP "parallel_i[10]" SITE "A13" ;
+
+#LOCATE COMP "flashClk_o" SITE "C11" ;
+LOCATE COMP "flashMosi_o" SITE "T8" ;
+LOCATE COMP "flashMiso_i" SITE "T7" ;
+LOCATE COMP "flashWp_o" SITE "M7" ;
+LOCATE COMP "flashHold_o" SITE "N7" ;
+
+LOCATE COMP "uartTx_o" SITE "D1" ;
+LOCATE COMP "uartRx_i" SITE "C1" ;

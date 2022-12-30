@@ -1,0 +1,6 @@
+logs
+obj_dir
+*.bin
+*.config
+*.json
+*.svf
